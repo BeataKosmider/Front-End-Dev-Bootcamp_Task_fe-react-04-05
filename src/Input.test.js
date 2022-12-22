@@ -9,7 +9,7 @@ describe('List tests', () => {
   let wrapper = mount(<Input />);
 
   it('Poprawnie wyświetla input', () => {
-    expect(wrapper.find('input').prop('type')).toBe("password")
+    expect(wrapper.find('input').prop('type')).toBe('password');
   });
 
   it('Poprawnie wyświetla button', () => {
@@ -18,11 +18,11 @@ describe('List tests', () => {
 
   it('Po kliknięciu w button, typ inputa zmienia się na text', () => {
     wrapper.find('button').simulate('click');
-    expect(wrapper.find('input').prop('type')).toBe("text")
+    expect(wrapper.find('input').prop('type')).toBe('text');
   });
 
   it('Po kliknięciu w button ponownie, typ inputa wraca do typu password', () => {
     wrapper.find('button').simulate('click');
-    expect(wrapper.find('input').prop('type')).toBe("password")
+    expect(wrapper.find('input').prop('type')).toBe('password');
   });
 });
