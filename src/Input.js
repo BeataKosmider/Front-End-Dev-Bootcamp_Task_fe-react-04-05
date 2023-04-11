@@ -1,25 +1,31 @@
-import React from 'react';
+import React from "react";
 
 class Input extends React.Component {
   constructor() {
     super();
 
     this.state = {
-      inputType: "password"
-    }
+      inputType: "password",
+    };
   }
 
   setInputType = () => {
     let { inputType } = this.state;
-    if (inputType === 'password') { inputType = "text" }
-    else { inputType = "password" }
-    this.setState({inputType})
-  }
+    if (inputType === "password") {
+      inputType = "text";
+    } else {
+      inputType = "password";
+    }
+    this.setState({ inputType });
+  };
 
   render() {
-    return <div>
-      <input type={this.state.inputType}></input><button onClick={this.setInputType}>X</button>
-    </div>
+    return (
+      <div>
+        <input type={this.state.inputType}></input>
+        <button onClick={this.setInputType}>Zatwierdź</button>
+      </div>
+    );
   }
 }
 
