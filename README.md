@@ -1,3 +1,5 @@
+Stwórz komponent Input, a w nim input typu “password” oraz button obok niego. Spraw aby po kliknięciu w przycisk, typ inputu zmienił się na “text”. Dzięki temu użytkownik może podejrzeć czy wpisał poprawnie hasło, bez literówek. Po ponownym kliknięciu w button, przywróć typ “password”
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
